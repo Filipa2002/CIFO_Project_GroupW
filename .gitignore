@@ -1,0 +1,29 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Source: https://gist.github.com/MOOOWOOO/3cf91616c9f3bbc3d1339adfc707b08a
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtualenv
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# idea folder, uncomment if you don't need it
+.idea/
+
+# files
+_/
+Paper&Books/
+data/1_WeddingSeatingOptimization/
+data/2_SportsLeagueOptimization/
+links.txt
+CIFO_LiteratureReview.xlsx
+CIFO_Designs_GroupW.pptx
+MusicLineupOptimization_CIFOProject_GroupW.html
+CIFO_GroupW_Report.docx
+CIFO_GroupW_Report.pdf
