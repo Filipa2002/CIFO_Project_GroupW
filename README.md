@@ -1,16 +1,13 @@
 # 🎶 Music Festival Lineup Optimization using Genetic Algorithms 🎤🎸
 
-Work developed for the **Computational Intelligence for Optimization (CIFO)** course in the **Master's in Data Science and Advanced Analytics** at **NOVA IMS** (Spring Semester 2024-2025).
-
 <p align="center">
-    <a href="https://github.com/Silvestre17/CIFO_Project_GroupW"> <!-- Make sure this link is correct -->
-        <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo">
-    </a>
+    <!-- Project Links -->
+    <a href="https://github.com/Silvestre17/CIFO_MusicFestivalLineup_GeneticAlgorithm_MasterProject"><img src="https://img.shields.io/badge/Project_Repo-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo"></a>
 </p>
 
 ## **📝 Description**
 
-This project applies a **Genetic Algorithm (GA)** metaheuristic to tackle the **Music Festival Lineup Optimization problem**. The primary goal is to determine the optimal schedule for 35 artists across **5 stages** and **7 time slots**. The "optimal" lineup is defined by its ability to successfully balance three equally weighted criteria: maximizing prime-time slot popularity, maximizing simultaneous genre diversity, and minimizing scheduling conflicts due to overlapping fan bases.
+This project applies a **Genetic Algorithm (GA)**, a powerful metaheuristic, to solve the complex **Music Festival Lineup Optimization problem**. The challenge is to create an optimal schedule for 35 artists across 5 stages and 7 time slots. An "optimal" lineup is one that successfully balances three conflicting criteria: maximizing the popularity of artists in prime-time slots, maximizing simultaneous genre diversity, and minimizing scheduling conflicts between artists with overlapping fan bases.
 
 ## **✨ Objective**
 
@@ -23,15 +20,30 @@ The main objectives of this project are to:
 -   **Evaluate different GA configurations** (selection, crossover, mutation operators, elitism) to identify the most effective strategies.
 -   **(Extra)** Compare the GA's performance against other optimization heuristics like **Hill Climbing** and **Simulated Annealing**.
 
-## **📚 Context**
+## **📚 Project Context**
 
-This project was undertaken as part of the **Computational Intelligence for Optimization (CIFO)** course in the Master's in Data Science and Advanced Analytics program at **NOVA IMS**. The problem statement and dataset were provided within the course, challenging us to apply and extend concepts learned in class to a complex optimization scenario.
+This project was developed for the **Computational Intelligence for Optimization (CIFO)** course in the **[Master's in Data Science and Advanced Analytics](https://www.novaims.unl.pt/en/education/programs/postgraduate-programs-and-master-degree-programs/master-degree-program-in-data-science-and-advanced-analytics-with-a-specialization-in-data-science/)** program at **NOVA IMS**, during the **2nd Semester** of the 2024-2025 academic year.
 
 **Dataset Source:** The project utilizes two primary CSV files:
 *   `artists(in).csv`: Contains details for each of the 35 artists, including their unique name, primary music genre, and a popularity score (0-100).
 *   `conflicts(in).csv`: A square matrix representing the degree of fan base conflict (0-1) between any two artists if they perform simultaneously.
 
-## **🏗️ Project Structure**
+
+## **🛠️ Technology Stack**
+
+The entire project, from data handling to algorithm implementation and analysis, was developed in **Python**.
+
+<p align="center">
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+    <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"></a>
+    <a href="https://numpy.org/"><img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"></a>
+    <a href="https://matplotlib.org/"><img src="https://img.shields.io/badge/Matplotlib-D3D3D3?style=for-the-badge&logo=matplotlib&logoColor=black" alt="Matplotlib"></a>
+    <a href="https://seaborn.pydata.org/"><img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn"></a>
+    <a href="https://plotly.com/python/"><img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly"></a>
+    <a href="https://docs.scipy.org/doc/scipy/reference/stats.html"><img src="https://img.shields.io/badge/SciPy.Stats-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" alt="SciPy Stats"></a>
+</p>
+
+## **🏗️ Project Workflow & Methodology**
 
 The project follows a structured approach, guiding the process from understanding the problem to analyzing the results.
 
@@ -160,32 +172,13 @@ The project follows a structured approach, guiding the process from understandin
     *   **Report:** A PDF document detailing the problem, methodology, experiments, results, and conclusions.
     *   **Results:** Saved experiments in `./Results/` and plots in `./Results/Plots/`.
 
-## 🛠️ Technologies & Libraries
+## **📈 Key Results & Insights**
 
-<p align="center">
-    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
-    <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"></a>
-    <a href="https://numpy.org/"><img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"></a>
-    <a href="https://matplotlib.org/"><img src="https://img.shields.io/badge/Matplotlib-D3D3D3?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib"></a>
-    <a href="https://seaborn.pydata.org/"><img src="https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=seaborn&logoColor=white" alt="Seaborn"></a>
-    <a href="https://plotly.com/python/"><img src="https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly"></a>
-    <a href="https://docs.scipy.org/doc/scipy/reference/stats.html"><img src="https://img.shields.io/badge/SciPy.Stats-8CAAE6?style=for-the-badge&logo=scipy&logoColor=white" alt="SciPy Stats"></a>
-    <a href="https://scikit-posthocs.readthedocs.io/"><img src="https://img.shields.io/badge/scikit--posthocs-F7931E?style=for-the-badge&logo=python&logoColor=white" alt="scikit-posthocs"></a>
-</p>
-
-## 📈 Key Results
-
-
--   **Best Performing GA Configuration (Overall Peak Fitness):** `Rank & Cycle & Stage Shuffle & Elitism=False` (Fitness: ~0.8801).
--   **Best Performing GA Configuration (Median Final Fitness):** `Rank & Cycle & Stage Shuffle & Elitism=True` (Median Fitness at Gen 100: ~0.8573 ± 0.0065).
--   **Operator Impact:**
-    *   **Crossover:** `Cycle` crossover variants generally led to higher median fitness than `Order` crossover.
-    *   **Mutation:** `Stage Shuffle` mutation often featured in top configurations, suggesting its effectiveness in exploring diverse schedule arrangements.
-    *   **Selection:** `Rank` selection paired with `Cycle` crossover was a consistently strong combination. `Tournament` selection also yielded competitive results, especially with `Cycle` crossover.
--   **Elitism:** Generally beneficial, helping to preserve the best solutions found and often leading to slightly higher median fitness values in later generations, though configurations without elitism also achieved top peak fitness.
--   **Comparison with Other Heuristics:**
-    *   The best GA configurations significantly outperformed Hill Climbing.
-    *   The best GA configurations performed comparably to Simulated Annealing, with no statistically significant difference in their final median fitness distributions.
+*   **Best GA Configuration:** The combination of **Rank Selection**, **Cycle Crossover**, and **Stage Shuffle Mutation** (with Elitism enabled) consistently produced the highest median fitness scores over 100 generations.
+*   **Operator Impact:**
+    *   **Crossover:** `Cycle Crossover (CX)` proved superior, generally leading to higher-quality solutions by preserving absolute artist positions from parents.
+    *   **Mutation:** `Stage Shuffle` was a highly effective mutation strategy, promoting diverse exploration of the solution space.
+*   **Algorithm Comparison:** The best GA configurations **significantly outperformed Hill Climbing** and performed **on par with a well-tuned Simulated Annealing**, demonstrating the power of GAs in navigating complex, multi-modal search spaces.
 
 ## 📚 Conclusion & Future Work
 
@@ -197,15 +190,7 @@ This project successfully demonstrated the application of Genetic Algorithms to 
 *   Hybrid approaches combining GA with local search methods.
 *   A hyperparameter optimization for Simulated Annealing ($C$, $L$, $T$) to improve its performance.
 
-Feel free to explore the `MusicLineupOptimization_CIFOProject_GroupW.ipynb` notebook for detailed implementation, experimentation, and analysis!
-
-<br>
-
-### 👥 Team (Group W)
-
--   André Silvestre, 20240502
--   Filipa Pereira, 20240509
--   Umeima Mahomed, 20240543
+Feel free to explore the [`MusicLineupOptimization_CIFOProject_GroupW.ipynb`](./MusicLineupOptimization_CIFOProject_GroupW.ipynb) notebook for detailed implementation, experimentation, and analysis!
 
 <br>
 
@@ -237,3 +222,11 @@ Feel free to explore the `MusicLineupOptimization_CIFOProject_GroupW.ipynb` note
 ├── ReportSchemas/                                    # Report schemas and flowcharts
 └── README.md                                         # This file
 ```
+
+<br>
+
+## 👥 Team (Group W)
+
+-   André Silvestre, 20240502
+-   Filipa Pereira, 20240509
+-   Umeima Mahomed, 20240543
